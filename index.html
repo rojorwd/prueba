@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Sabor Andino | Inicio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/estilo.css" />
+  <style>
+    body {
+      background-image: url('img/fondo.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+
+ 
+  <header class="header">
+    <div class="container header-content">
+      <img src="img/logo.png" alt="Logo El Sabor Andino" class="logo-img" />
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Menu.html">Menú</a></li>
+          <li><a href="Reserva.html">Reservas</a></li>
+          <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+ 
+  <section class="hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>El Sabor Andino</h1>
+        <p>Sabores que Honran Nuestra Tierra</p>
+        <a href="Menu.html" class="btn">Explora el Menú</a>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section class="carrusel">
+    <div class="container">
+      <h2>Platos Destacados</h2>
+      <div class="slider">
+        <div class="slide-track">
+          <img src="img/ph1.jpeg" alt="Plato 1" />
+          <img src="img/ph2.jpeg" alt="Plato 2" />
+          <img src="img/ph3.jpeg" alt="Plato 3" />
+          <img src="img/ph4.jpeg" alt="Plato 4" />
+          <img src="img/ph5.jpeg" alt="Plato 5" />
+          <img src="img/ph6.jpeg" alt="Plato 6" />
+          <img src="img/ph7.jpeg" alt="Plato 7" />
+          <img src="img/ph8.jpeg" alt="Plato 8" />
+          <img src="img/ph9.jpeg" alt="Plato 9" />
+          <img src="img/ph10.jpeg" alt="Plato 10" />
+          <img src="img/ph11.jpeg" alt="Plato 11" />
+          <img src="img/ph12.jpeg" alt="Plato 12" />
+          <img src="img/ph13.jpeg" alt="Plato 13" />
+          <img src="img/ph14.jpeg" alt="Plato 14" />
+          <img src="img/ph15.jpeg" alt="Plato 15" />
+          <img src="img/ph16.jpeg" alt="Plato 16" />
+          <img src="img/ph17.jpeg" alt="Plato 17" />
+          <img src="img/ph18.jpeg" alt="Plato 18" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="nosotros">
+    <div class="container">
+      <h2>Nuestra Historia</h2>
+      <p>Fundado en 2010 en Huancayo, corazón del Valle del Mantaro, por Doña Carmen Mamani, El Sabor Andino nació con la misión de rescatar y preservar los sabores auténticos de los Andes centrales...</p>
+      <p>Desde un pequeño local familiar hasta convertirnos en un referente regional...</p>
+      <p>Te invitamos a ser parte de esta experiencia, a compartir con nosotros el sabor, la historia y la calidez de Huancayo en cada bocado.</p>
+    </div>
+  </section>
+
+  
+  <section class="contacto">
+    <div class="container">
+      <h2>Contáctanos</h2>
+      <p><strong>Teléfono:</strong> <a href="tel:+51987654321">+51 987 654 321</a></p>
+      <p><strong>Correo:</strong> <a href="mailto:contacto@saborandino.com">contacto@saborandino.com</a></p>
+    </div>
+  </section>
+
+
+<section class="ubicacion">
+  <div class="container">
+    <h2>¿Dónde estamos?</h2>
+    <p><strong>Dirección:</strong> Jr. Ancash 345, Huancayo, Perú</p>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.7985183772935!2d-75.20757442588434!3d-12.067453642462885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910edc1cf5be0d0f%3A0x92d3508cf91c7812!2sJr.%20Ancash%20345%2C%20Huancayo%2012001!5e0!3m2!1ses!2spe!4v1717525605000!5m2!1ses!2spe"
+      width="100%"
+      height="300"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 El Sabor Andino. Todos los derechos reservados.</p>
+      <div class="redes">
+        <a href="#">Facebook</a> |
+        <a href="#">Instagram</a> |
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const track = document.querySelector('.slide-track');
+    const images = document.querySelectorAll('.slide-track img');
+    let currentIndex = 0;
+
+    function updateSlide() {
+      const slideWidth = images[0].clientWidth;
+      track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % images.length;
+      updateSlide();
+    }
+
+    setInterval(nextSlide, 3000);
+    window.addEventListener('resize', updateSlide);
+    window.addEventListener('load', updateSlide);
+  </script>
+
+</body>
+</html>

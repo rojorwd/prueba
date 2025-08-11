@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva - El Sabor Andino</title>
+    <link rel="stylesheet" href="CSS/Reserva.css">
+</head>
+<body>
+    
+
+   <header>
+    <div class="nav-container">
+        
+        <img src="Imagenes/logo.png" alt="Logo de El Sabor Andino" class="logo">
+
+        
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="contacto.html">Contáctanos</a></li>
+                <li><a href="Reserva.html">Reservas</a></li>
+            </ul>
+        </nav>
+
+        
+        <div class="busqueda">
+            <input type="text" placeholder="Buscar..." id="search">
+            <button id="btnBuscar"><img src="Imagenes/lupa.png" alt="Buscar"></button>
+        </div>
+    </div>
+</header>
+
+
+
+
+
+
+    <section class="reserva-container">
+        <div class="formulario-lateral">
+            <h2>Reserva tu lugar</h2>
+            <p>Completa tus datos antes de elegir tu mesa:</p>
+
+            <div class="campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="campo">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+            </div>
+
+            <div class="campo">
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+
+            <div class="campo">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+
+            <hr>
+
+            <p>Ahora selecciona tu reserva:</p>
+
+            <div class="campo">
+                <label for="grupo">Tamaño del grupo:</label>
+                <select id="grupo" name="grupo">
+                    <option value="1">1 persona</option>
+                    <option value="2">2 personas</option>
+                    <option value="3">3 personas</option>
+                    <option value="4">4 personas</option>
+                    <option value="5">5 o más</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+
+            <div class="campo">
+                <label for="horario">Horario:</label>
+                <input type="time" id="horario" name="horario" required>
+            </div>
+        </div>
+
+        <div class="horarios-disponibles">
+            <h3>Elige una franja horaria disponible:</h3>
+            <div id="horariosGrid"></div>
+        </div>
+        
+    </section>
+
+    <div class="boton-reserva">
+        <button id="reservar">Reservar ahora</button>
+    </div>
+
+    <script src="Java/Reserva.js"></script>
+</body>
+<footer>
+    <div class="info-box">
+        <div class="info-section">
+            <h3>Dirección</h3>
+            <p>Av.SENATI<br>4100 Huancayo, Junin., Peu</p>
+        </div>
+
+        <div class="info-section">
+            <h3>Horarios</h3>
+            <p>Lun - Vie: 11:00 - 22:00<br>Sáb - Dom: 11:00 - 24:00</p>
+        </div>
+
+        <div class="info-section">
+            <h3>Contáctanos</h3>
+            <p>restaurateandino@gmai.com<br>+51-9748234556</p>
+        </div>
+    </div>
+
+    <div class="extra-links">
+        <a href="#">Términos y Condiciones</a> | 
+        <a href="#">Política de privacidad</a>
+    </div>
+
+    <p class="copyright">© 2035 Creado por Alvaro Arhuis</p>
+</footer>
+
+</html>

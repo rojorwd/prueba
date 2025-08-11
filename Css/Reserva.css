@@ -1,0 +1,233 @@
+
+body {
+    background-image: url('/Restaurante/Imagenes/fondo2.png');
+    background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+header {
+    background-color: #b52e31;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 30px;
+}
+
+.logo-container {
+    text-align: center;
+    width: 100%;
+}
+
+.logo-container img {
+    width: 150px;
+    height: auto;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover {
+    background-color: #7e1d21;
+}
+
+.busqueda {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.busqueda input {
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    outline: none;
+    width: 180px;
+}
+
+
+
+.reserva-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap; 
+}
+
+.formulario-lateral {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    width: 350px;
+}
+
+
+.formulario-lateral .campo {
+    background-color: #eaeaea;
+    padding: 18px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+select, input {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+
+hr {
+    border: 2px solid #b52e31;
+    margin: 20px 0;
+}
+
+
+.horarios-disponibles {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    width: 400px;
+}
+
+
+#horariosGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.horario-box {
+    background-color: #b52e31;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 90px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.horario-box:hover {
+    background-color: #7e1d21;
+}
+
+.horario-seleccionado {
+    background-color: #fada66 !important;
+    color: black;
+}
+
+
+.boton-reserva {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#reservar {
+    width: 220px;
+    padding: 18px;
+    background-color: #b52e31;
+    color: white;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+#reservar:hover {
+    background-color: #7e1d21;
+}
+
+
+/* 🔹 Estilos del cajón negro */
+footer {
+    background-color: #000;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+/* 🔹 Contenedor de información */
+.info-box {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.info-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.info-section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* 🔹 Enlaces de términos y política */
+.extra-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+.extra-links a:hover {
+    text-decoration: underline;
+}
+
+/* 🔹 Copyright */
+.copyright {
+    font-size: 14px;
+    margin-top: 15px;
+    opacity: 0.7;
+}
